@@ -57,3 +57,26 @@ emp2 = Employee("David")
 ### Output: 
 > John created <br>
 > David created
+
+### What is Instance Method ? 
+- Instance Method are methods which require an object of its class to be created before it can be called.
+- Instance methods need a class instance and can access the instance through __self__.
+- Instance method takes more than one paramenter,__self__, which points to an instance of a class.
+- The __self__ parameter, instance methods can freely access attributes and other methods on the same object.
+
+```python
+class Employee:
+    #parametrized constructor
+    def __init__(self,name,no):
+        self.no = no #instance variable
+        self.name = name # instance variable
+
+    # instance method
+    def display(self):
+        print(self.name,self.no)
+   
+emp1 = Employee("John",11) #instance 1
+emp2 = Employee("David",12) #instance 2
+emp1.display()
+emp2.display()
+```

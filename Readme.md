@@ -17,3 +17,103 @@
 
 ### Show an Example of class and object.
 <img src="./public/images/class/class_object_example.png" alt="Alternative text" width="300" height="200">
+### What is Constructor?
+- A special kind of method we use to initialize instance members of that class.
+- It is used for initializing the instance members when we create the object of a class.
+- If you create4 four objects, the class constructor will call four times.
+- Every class must have a constructor, even if it simply relies on the default constructor.
+- constructors can be two types.
+  - Non-parameterized constructor (Default Constructor)
+  - Parameterized Constructor
+
+
+```python
+#Example of a default constructor
+class Employee:
+    def __init__(self):
+        print("Employee object Created")
+
+emp1 = Employee()
+emp2 = Employee()
+``` 
+### Output: 
+> Employee object Created <br>
+> Employee object Created
+
+```python
+class Employee:
+    def__init__(self,name):
+        # instance variable
+        self.name = name
+        print(self.name, "created!")
+
+#instance 1
+emp1 = Employee("John")
+#instance 2
+emp2 = Employee("David")
+```
+### Output: 
+> John created <br>
+> David created
+
+### What is Constructor?
+- A special kind of method we use to initialize instance members of that class.
+- It is used for initializing the instance members when we create the object of a class.
+- If you create4 four objects, the class constructor will call four times.
+- Every class must have a constructor, even if it simply relies on the default constructor.
+- constructors can be two types.
+  - Non-parameterized constructor (Default Constructor)
+  - Parameterized Constructor
+
+
+```python
+#Example of a default constructor
+class Employee:
+    def __init__(self):
+        print("Employee object Created")
+
+emp1 = Employee()
+emp2 = Employee()
+``` 
+### Output: 
+> Employee object Created <br>
+> Employee object Created
+
+```python
+class Employee:
+    def__init__(self,name):
+        # instance variable
+        self.name = name
+        print(self.name, "created!")
+
+#instance 1
+emp1 = Employee("John")
+#instance 2
+emp2 = Employee("David")
+```
+### Output: 
+> John created <br>
+> David created
+
+### What is Instance Method ? 
+- Instance Method are methods which require an object of its class to be created before it can be called.
+- Instance methods need a class instance and can access the instance through __self__.
+- Instance method takes more than one paramenter,__self__, which points to an instance of a class.
+- The __self__ parameter, instance methods can freely access attributes and other methods on the same object.
+
+```python
+class Employee:
+    #parametrized constructor
+    def __init__(self,name,no):
+        self.no = no #instance variable
+        self.name = name # instance variable
+
+    # instance method
+    def display(self):
+        print(self.name,self.no)
+   
+emp1 = Employee("John",11) #instance 1
+emp2 = Employee("David",12) #instance 2
+emp1.display()
+emp2.display()
+```
