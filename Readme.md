@@ -1,3 +1,5 @@
+<h1 align = "center">Play With Python</h1>
+
 ### what is class in object oriented programming ?
 > A class is athe blue print for the objects, created from the class.
 > Each class contains some data definitions (called fields), togeter with methods to manipulate that data.
@@ -56,7 +58,7 @@ emp2 = Employee("David")
 > John created <br>
 > David created
 
-### What is Constructor ?  
+### What is Constructor ?   
 - A special kind of method we use to initialize instance members of that class.
 - It is used for initializing the instance members when we create the object of a class.
 - If you create4 four objects, the class constructor will call four times.
@@ -120,16 +122,17 @@ emp2.display()
 ```
 ### What is the use of __dict__ and dir()? 
 > if argument is given, it returns a list of valid attributes for that object.
+
 ```python
 s1 = Student("Bob",12,"01322352864")
 s1.display()
 print(dir(s1))
 ```
+
 ### output of dir() method:
 ```python 
 ['__class__', '__delattr__', '__dict__', '__dir__', '__doc__', '__eq__', '__format__', '__ge__', '__getattribute__', '__gt__', '__hash__', '__init__', '__init_subclass__', '__le__', '__lt__', '__module__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', '__weakref__', 'contact', 'display', 'student_id', 'student_name']
 ```
-
 
 > The __dict__ in Python represents a dictionary or any mapping object that is used to store the attributes of the object.
 ```python
@@ -154,4 +157,32 @@ b1 = bk.Book("Opekkha","Humayun Ahmed")
 b1.details()
 b1.set_price(255)
 b1.details()
+```
+
+### What is pass by value and pass by reference in oop? 
+>In Python, objects are passed by reference, so modifications to mutable objects within functions affect the original object; however, immutable objects behave like pass by value, preserving the original value outside the function.
+
+```python
+class Example:
+    def __init__(self, value):
+        self.value = value
+
+def modify_value(obj):
+    obj.value = "modified"  # This will modify the original object
+
+def modify_immutable(value):
+    value = "modified"  # This will not modify the original value
+# Creating an instance of Example class
+obj = Example("original")
+print("Before function call:", obj.value)
+# Passing the object to the function
+modify_value(obj)
+print("After function call:", obj.value)  # Output will be "modified"
+# Example with immutable object
+number = 10
+print("Before function call:", number)
+# Passing the immutable object to the function
+modify_immutable(number)
+print("After function call:", number)  # Output will still be 10
+
 ```
