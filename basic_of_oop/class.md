@@ -8,7 +8,13 @@
 
 
 ### Show a relation between Object and Class.
-<img src="../public/images/class_object_relation.png" alt="Alternative text" width="300" height="200">
+<img src="../public/images/class/class_object_relation.png" alt="Alternative text" width="300" height="200">
 
 ### Discribe the components of a class.
-<img src="../public/images/class_components.png" alt="Alternative text" width="300" height="200">
+<img src="../public/images/class/class_components.png" alt="Alternative text" width="300" height="200">
+
+### What is Method?
+> A python method is like a python function. it must be called on an object which need to be put inside a class, can return statement.
+
+### Show an Example of class and object.
+<img src="../public/images/class/class_object_example.png" alt="Alternative text" width="300" height="200">
