@@ -106,3 +106,17 @@ print(s1.__dict__)
 ```python
 {'student_name': 'Bob', 'student_id': 12, 'contact': '01322352864'}
 ```
+
+
+### How to use from and import ? 
+> when classes are in same directory,to access a specific class, we will use import,<br>
+otherwise we will use from <dic_path> import <class_name>
+
+```python
+import book as bk
+
+b1 = bk.Book("Opekkha","Humayun Ahmed")
+b1.details()
+b1.set_price(255)
+b1.details()
+```
