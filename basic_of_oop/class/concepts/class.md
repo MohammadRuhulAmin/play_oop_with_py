@@ -80,3 +80,29 @@ emp2 = Employee("David",12) #instance 2
 emp1.display()
 emp2.display()
 ```
+
+### What is the use of __dict__ and dir()? 
+> if argument is given, it returns a list of valid attributes for that object.
+```python
+s1 = Student("Bob",12,"01322352864")
+s1.display()
+print(dir(s1))
+```
+### output of dir() method:
+```python 
+['__class__', '__delattr__', '__dict__', '__dir__', '__doc__', '__eq__', '__format__', '__ge__', '__getattribute__', '__gt__', '__hash__', '__init__', '__init_subclass__', '__le__', '__lt__', '__module__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', '__weakref__', 'contact', 'display', 'student_id', 'student_name']
+```
+
+
+> The __dict__ in Python represents a dictionary or any mapping object that is used to store the attributes of the object.
+```python
+s1 = Student("Bob",12,"01322352864")
+s1.display()
+print(s1.__dict__)
+```
+
+### output of __dict__ method:
+
+```python
+{'student_name': 'Bob', 'student_id': 12, 'contact': '01322352864'}
+```
