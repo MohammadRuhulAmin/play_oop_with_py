@@ -19,6 +19,7 @@
 
 ### Show an Example of class and object.
 <img src="./public/images/class/class_object_example.png" alt="Alternative text" width="300" height="200">
+
 ### What is Constructor?
 - A special kind of method we use to initialize instance members of that class.
 - It is used for initializing the instance members when we create the object of a class.
