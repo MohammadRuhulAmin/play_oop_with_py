@@ -58,7 +58,7 @@ emp2 = Employee("David")
 > John created <br>
 > David created
 
-### What is Constructor ?   
+### What is Constructor?
 - A special kind of method we use to initialize instance members of that class.
 - It is used for initializing the instance members when we create the object of a class.
 - If you create4 four objects, the class constructor will call four times.
