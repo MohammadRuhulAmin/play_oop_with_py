@@ -186,3 +186,31 @@ modify_immutable(number)
 print("After function call:", number)  # Output will still be 10
 
 ```
+
+### what is method overloading?
+> Two or more methods have the same name but different numbers of parameters or different types of parameters, or both. These methods are called overloaded methods and this is called method overloading. <br>Like other languages (for example, method overloading in C++) do, python does not support method overloading by default. But there are different ways to achieve method overloading in Python. <br>The problem with method overloading in Python is that we may overload the methods but can only use the latest defined method. <b> python does not support method overloading by default, but it is possible</b> 
+
+```python
+class calculator:
+    #way 1
+    def product(self,num1,num2= None,num3=None):
+        if num1!=None and num2 !=None and num3!=None:
+            return num1*num2*num3
+        elif num1!= None and num2 != None:
+            return num1*num2 
+        else: return num1*1
+    #way 2
+    def summation(self,*nums):
+        sum = 1
+        for x in nums:
+            sum = sum + x
+        return sum
+
+c1 = calculator()
+x = c1.product(4)
+y = c1.product(4,5)
+z = c1.product(4,5,6)
+print(x,y,z)
+p = c1.summation(11,22,33,4,5)
+print(p)
+```
